@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Contact | Archangel Home Care Marketing</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Archangel Home Care Marketing</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar">
   <div class="logo">Archangel Home Care Marketing</div>
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="solutions.html">Solutions</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+
+    <li class="dropdown">
+      <a href="/solutions.html">Solutions ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="/solutions/website-design.html">Website Design</a></li>
+        <li><a href="/solutions/local-seo.html">Local SEO</a></li>
+        <li><a href="/solutions/referral-marketing.html">Referral Marketing</a></li>
+        <li><a href="/solutions/paid-ads.html">Paid Ads</a></li>
+        <li><a href="/solutions/reputation-reviews.html">Reputation & Reviews</a></li>
+      </ul>
+    </li>
+
+    <li><a href="/contact.html" class="active">Contact Us</a></li>
   </ul>
 </nav>
 
-<section class="container">
-  <h1>Contact Us</h1>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="How can we help?" rows="5"></textarea>
-    <button class="btn">Submit</button>
-  </form>
+<!-- Hero / Page Header -->
+<section class="hero">
+  <div class="container">
+    <h1>Contact Archangel Home Care Marketing</h1>
+    <p>We’d love to hear from you! Fill out the form below and we’ll get back to you promptly.</p>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-form-section">
+  <div class="container">
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+
+      <button type="submit" class="cta-button">Get Started</button>
+    </form>
+  </div>
 </section>
 
 </body>
