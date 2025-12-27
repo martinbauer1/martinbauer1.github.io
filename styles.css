@@ -60,9 +60,7 @@ a {
   color: #007bff;
 }
 
-/* =======================
-   Dropdown Menu
-======================= */
+/* Dropdown menu */
 .navbar .dropdown:hover > .dropdown-menu {
   display: block;
 }
@@ -94,6 +92,14 @@ a {
   background-color: #f4f7fb;
   color: #007bff;
 }
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+  }
+}
+
 
 /* =======================
    Hero Section
