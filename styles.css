@@ -1,386 +1,157 @@
-/* ================================
-   Reset & Global Styles
-   ================================ */
+/* ---------- General Reset ---------- */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 body {
-  color: #1a2b4c;
   line-height: 1.6;
-  background-color: #ffffff;
-  scroll-behavior: smooth;
+  color: #333;
+  background-color: #fff;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-/* ================================
-   Navbar
-   ================================ */
+/* ---------- Navbar ---------- */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #004080;
   padding: 1rem 2rem;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
   position: sticky;
   top: 0;
-  z-index: 100;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
 }
 
-.navbar .logo {
-  font-weight: bold;
+.navbar .logo a {
+  color: #fff;
+  text-decoration: none;
   font-size: 1.5rem;
-  color: #007bff;
+  font-weight: bold;
 }
 
 .navbar .nav-links {
+  list-style: none;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.navbar .nav-links li {
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a.active {
+  color: #ffcc00;
+}
+
+/* Dropdown */
+.navbar .dropdown {
   position: relative;
 }
 
-.navbar .nav-links a {
-  padding: 0.5rem 1rem;
-  color: #1a2b4c;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.navbar .nav-links a:hover,
-.navbar .nav-links a.active {
-  color: #007bff;
-}
-
-.navbar .dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
 .navbar .dropdown-menu {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  min-width: 220px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  z-index: 1000;
-  transition: all 0.3s ease;
+  background: #004080;
+  list-style: none;
+  padding: 0.5rem 0;
+  display: none;
+  min-width: 200px;
+  border-radius: 0 0 5px 5px;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown-menu li {
+  padding: 0;
 }
 
 .navbar .dropdown-menu li a {
   display: block;
-  padding: 12px 16px;
-  font-size: 14px;
-  color: #1a2b4c;
-  transition: background 0.2s ease, color 0.2s ease;
+  padding: 0.75rem 1rem;
+  color: #fff;
 }
 
 .navbar .dropdown-menu li a:hover {
-  background-color: #f4f7fb;
-  color: #007bff;
+  background-color: #003366;
 }
 
-/* ================================
-   Hero Section
-   ================================ */
+/* ---------- Sections ---------- */
+section {
+  padding: 6rem 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ---------- Hero Section ---------- */
 .hero {
-  padding: 5rem 2rem;
   text-align: center;
-  background-color: #f4f7fb;
-  animation: fadeIn 1s ease;
+  background: #e6f0ff;
+  padding: 8rem 2rem;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #555;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
-/* ================================
-   Solutions Grid
-   ================================ */
-.solutions-overview {
-  padding: 4rem 2rem;
+/* ---------- CTA Buttons ---------- */
+.cta-button {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #004080;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
+}
+
+/* ---------- Solutions Grid ---------- */
+.solutions-overview h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
 }
 
 .solutions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
 }
 
 .solution-card {
-  display: block;
-  padding: 2rem 1.5rem;
-  background-color: #ffffff;
-  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  padding: 2rem 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeInUp 0.8s ease;
+  background-color: #fff;
 }
 
 .solution-card img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.solution-card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-.solution-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.8rem;
-}
-
-.solution-card p {
-  color: #555;
-}
-
-/* ================================
-   Solution Detail Pages
-   ================================ */
-.solution-detail {
-  padding: 4rem 2rem;
-  animation: fadeIn 1s ease;
-}
-
-.solution-detail h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.solution-detail ul {
-  list-style: disc inside;
-  margin-top: 1rem;
-}
-
-.solution-detail ul li {
-  margin-bottom: 0.8rem;
-  color: #555;
-}
-
-/* ================================
-   CTA Section
-   ================================ */
-.cta, .contact-form-section {
-  padding: 4rem 2rem;
-  background-color: #f4f7fb;
-  text-align: center;
-  animation: fadeIn 1s ease;
-}
-
-.cta-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.cta h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.cta p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-.cta-button {
-  background-color: #007bff;
-  color: #ffffff;
-  padding: 0.9rem 2rem;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px) scale(1.02);
-}
-
-/* ================================
-   Strategy Call Section (Contact Us)
-   ================================ */
-.strategy-call {
-  padding: 4rem 2rem;
-  background-color: #f9f9f9;
-  text-align: center;
-  animation: fadeIn 1s ease;
-}
-
-.strategy-call h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #1a2b4c;
-}
-
-.strategy-call p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-.strategy-call ul {
-  list-style: disc inside;
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1rem;
-  color: #333;
-}
-
-.strategy-call ul li {
-  margin-bottom: 0.8rem;
-}
-
-/* ================================
-   Two-Column Contact Section
-   ================================ */
-.contact-two-column {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 3rem;
-  padding: 5rem 2rem;
-  background: linear-gradient(135deg, #f4f7fb, #ffffff);
-  flex-wrap: wrap;
-  animation: fadeInUp 1s ease;
-}
-
-.contact-two-column .contact-left,
-.contact-two-column .contact-right {
-  flex: 1 1 400px;
-}
-
-.contact-two-column h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #1a2b4c;
-}
-
-.contact-two-column p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #555;
-}
-
-.contact-two-column ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.contact-two-column ul li {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  color: #333;
-  transition: transform 0.2s ease;
-}
-
-.contact-two-column ul li i {
-  color: #007bff;
-  font-size: 1.2rem;
-}
-
-.contact-two-column ul li:hover {
-  transform: translateX(5px);
-}
-
-/* ================================
-   Contact Form
-   ================================ */
-.contact-right .contact-form {
-  background: #ffffff;
-  padding: 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  animation: fadeIn 1s ease;
-}
-
-.contact-form label {
-  font-weight: 500;
-  color: #1a2b4c;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form select:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 6px #007bff33;
-}
-
-/* ================================
-   Animations
-   ================================ */
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(10px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-/* ================================
-   Responsive
-   ================================ */
-@media (max-width: 992px) {
-  .contact-two-column {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .navbar .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .solutions-grid {
-    grid-template-columns: 1fr;
-  }
-}
+  margin-bottom
