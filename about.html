@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>About | Archangel Home Care Marketing</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Archangel Home Care Marketing</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav class="navbar">
-  <div class="logo">Archangel Home Care Marketing</div>
+  <div class="logo"><a href="index.html#hero">Archangel Home Care Marketing</a></div>
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="solutions.html">Solutions</a></li>
+    <li><a href="index.html#hero">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li class="dropdown">
+      <a href="solutions.html">Solutions ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="solutions/website-design.html">Website Design</a></li>
+        <li><a href="solutions/local-seo.html">Local SEO</a></li>
+        <li><a href="solutions/referral-marketing.html">Referral Marketing</a></li>
+        <li><a href="solutions/paid-ads.html">Paid Ads</a></li>
+        <li><a href="solutions/reputation-reviews.html">Reputation & Reviews</a></li>
+      </ul>
+    </li>
     <li><a href="contact.html">Contact Us</a></li>
   </ul>
 </nav>
 
-<section class="container">
-  <h1>About Martin Bauer</h1>
-  <p>I founded Archangel Home Care Marketing to serve agencies with integrity, clarity, and purpose.</p>
-  <p>My mission is rooted in Christian values — service, honesty, and stewardship.</p>
+<section class="hero">
+  <div class="container">
+    <h1>About Archangel Home Care Marketing</h1>
+    <p>Hi, I’m Martin Bauer. My mission is to help home care agencies grow with integrity, faith, and proven marketing solutions. Rooted in Christian values, we put your agency’s growth and the families you serve first.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta-container">
+    <h2>Ready to Take Your Agency to the Next Level?</h2>
+    <a href="contact.html#contact-form" class="cta-button">Get Started</a>
+  </div>
 </section>
 
 </body>
