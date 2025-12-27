@@ -5,94 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Archangel Home Care Marketing</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<!-- Navbar -->
 <nav class="navbar">
-  <div class="logo">Archangel Home Care Marketing</div>
+  <div class="logo"><a href="index.html#hero">Archangel Home Care Marketing</a></div>
   <ul class="nav-links">
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/about.html">About</a></li>
-
+    <li><a href="index.html#hero">Home</a></li>
+    <li><a href="about.html">About</a></li>
     <li class="dropdown">
-      <a href="/solutions.html">Solutions ▾</a>
+      <a href="solutions.html">Solutions ▾</a>
       <ul class="dropdown-menu">
-        <li><a href="/solutions/website-design.html">Website Design</a></li>
-        <li><a href="/solutions/local-seo.html">Local SEO</a></li>
-        <li><a href="/solutions/referral-marketing.html">Referral Marketing</a></li>
-        <li><a href="/solutions/paid-ads.html">Paid Ads</a></li>
-        <li><a href="/solutions/reputation-reviews.html">Reputation & Reviews</a></li>
+        <li><a href="solutions/website-design.html">Website Design</a></li>
+        <li><a href="solutions/local-seo.html">Local SEO</a></li>
+        <li><a href="solutions/referral-marketing.html">Referral Marketing</a></li>
+        <li><a href="solutions/paid-ads.html">Paid Ads</a></li>
+        <li><a href="solutions/reputation-reviews.html">Reputation & Reviews</a></li>
       </ul>
     </li>
-
-    <li><a href="/contact.html" class="active">Contact Us</a></li>
+    <li><a href="contact.html" class="active">Contact Us</a></li>
   </ul>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="container">
-    <h1>Contact Archangel Home Care Marketing</h1>
-    <p>Schedule a free strategy call and learn how we can help your home care business grow.</p>
-  </div>
+<section class="strategy-call">
+  <h2>Schedule a Free Strategy Call</h2>
+  <ul>
+    <li><i class="fa fa-check"></i> Connect 1:1 with an expert</li>
+    <li><i class="fa fa-check"></i> Explore proven marketing strategies</li>
+    <li><i class="fa fa-check"></i> Get expert insights for growth</li>
+  </ul>
 </section>
 
-<!-- Two-Column Contact Section -->
-<section class="contact-two-column">
-  <div class="container">
-    <!-- Left: Marketing Info -->
-    <div class="contact-left">
-      <h2>Schedule a Free Strategy Call</h2>
-      <p>During our call, we’ll help you understand the best marketing strategies tailored for your agency. Together we can:</p>
-      <ul>
-        <li><i class="fas fa-phone"></i> Connect 1:1 to review your current marketing efforts</li>
-        <li><i class="fas fa-lightbulb"></i> Explore proven marketing strategies for home care agencies</li>
-        <li><i class="fas fa-chart-line"></i> Get expert insights to increase leads and referrals</li>
-      </ul>
-    </div>
+<section class="contact-two-column" id="contact-form">
+  <div class="contact-left">
+    <h2>Tell Us About Your Business</h2>
+    <p>Fill out the form and we'll craft a plan tailored to your agency.</p>
+  </div>
+  <div class="contact-right">
+    <form class="contact-form">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
 
-    <!-- Right: Business Form -->
-    <div class="contact-right">
-      <h2>Tell Us About Your Business</h2>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-        <label for="full-name">Full Name</label>
-        <input type="text" id="full-name" name="full_name" placeholder="Your full name" required>
+      <label for="company">Company Name</label>
+      <input type="text" id="company" name="company" required>
 
-        <label for="company-name">Company Name</label>
-        <input type="text" id="company-name" name="company_name" placeholder="Your company name" required>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+      <label for="website">Website URL</label>
+      <input type="url" id="website" name="website">
 
-        <label for="website">Website URL</label>
-        <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+      <label for="business-type">Type of Business</label>
+      <select id="business-type" name="business-type">
+        <option value="">Select...</option>
+        <option value="home-care">Home Care</option>
+        <option value="hospice">Hospice</option>
+        <option value="nursing">Nursing</option>
+      </select>
 
-        <label for="business-type">Type of Business</label>
-        <select id="business-type" name="business_type" required>
-          <option value="">Select a type</option>
-          <option value="private-duty">Private Duty / Non-medical</option>
-          <option value="skilled-nursing">Skilled Nursing</option>
-          <option value="companion-care">Companion Care</option>
-          <option value="other">Other</option>
-        </select>
+      <label for="budget">Monthly Budget</label>
+      <select id="budget" name="budget">
+        <option value="">Select...</option>
+        <option value="under-2k">&lt; $2k</option>
+        <option value="2k-5k">$2k–$5k</option>
+        <option value="5k-10k">$5k–$10k</option>
+        <option value="over-10k">&gt; $10k</option>
+      </select>
 
-        <label for="monthly-budget">Monthly Marketing Budget</label>
-        <select id="monthly-budget" name="monthly_budget" required>
-          <option value="">Select budget</option>
-          <option value="0-1000">$0 - $1,000</option>
-          <option value="1000-3000">$1,000 - $3,000</option>
-          <option value="3000-5000">$3,000 - $5,000</option>
-          <option value="5000+">$5,000+</option>
-        </select>
-
-        <button type="submit" class="cta-button">Get Started</button>
-      </form>
-    </div>
+      <button type="submit" class="cta-button">Get Started</button>
+    </form>
   </div>
 </section>
 
