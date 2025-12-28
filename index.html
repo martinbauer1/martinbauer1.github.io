@@ -5,69 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Archangel Home Care Marketing</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo"><a href="#hero">Archangel Home Care Marketing</a></div>
-  <ul class="nav-links">
-    <li><a href="#hero" class="active">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-      <a href="solutions.html">Solutions ▾</a>
-      <ul class="dropdown-menu">
-        <li><a href="solutions/website-design.html">Website Design</a></li>
-        <li><a href="solutions/local-seo.html">Local SEO</a></li>
-        <li><a href="solutions/referral-marketing.html">Referral Marketing</a></li>
-        <li><a href="solutions/paid-ads.html">Paid Ads</a></li>
-        <li><a href="solutions/reputation-reviews.html">Reputation & Reviews</a></li>
-      </ul>
-    </li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
+  <div class="nav-inner">
+    <div class="logo">
+      <a href="/index.html">Archangel Home Care Marketing</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/index.html" class="active">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li class="dropdown">
+        <a href="/solutions.html">Solutions</a>
+        <ul class="dropdown-menu">
+          <li><a href="/solutions/website-design.html">Website Design</a></li>
+          <li><a href="/solutions/local-seo.html">Local SEO</a></li>
+          <li><a href="/solutions/paid-ads.html">Paid Ads</a></li>
+          <li><a href="/solutions/referral-marketing.html">Referral Marketing</a></li>
+          <li><a href="/solutions/reputation-reviews.html">Reputation & Reviews</a></li>
+        </ul>
+      </li>
+      <li><a href="/contact.html">Contact Us</a></li>
+    </ul>
+  </div>
 </nav>
 
-<section id="hero" class="hero">
+<!-- HERO -->
+<section class="hero">
   <div class="container">
-    <h1>Grow Your Home Care Agency</h1>
-    <p>Schedule a free strategy call and see how our marketing solutions can help your agency thrive.</p>
+    <h1>Grow Your Home Care Agency with Archangel Home Care Marketing</h1>
+    <p>We provide website design, local SEO, paid advertising, referral marketing, and reputation management to help your agency attract more clients.</p>
     <a href="/contact.html" class="btn primary">Get Started</a>
   </div>
 </section>
 
-
+<!-- SOLUTIONS -->
 <section class="solutions-overview">
-  <h2 class="fade-in">Our Solutions</h2>
-  <div class="solutions-grid">
-    <a href="solutions/website-design.html" class="solution-card">
-      <img src="images/website-design.jpg" alt="Website Design" loading="lazy">
-      <h3>Website Design</h3>
-      <p>Create a professional website to attract and convert families.</p>
-    </a>
-    <a href="solutions/local-seo.html" class="solution-card">
-      <img src="images/local-seo.jpg" alt="Local SEO" loading="lazy">
-      <h3>Local SEO</h3>
-      <p>Get found by families searching for home care services in your area.</p>
-    </a>
-    <a href="solutions/referral-marketing.html" class="solution-card">
-      <img src="images/referral-marketing.jpg" alt="Referral Marketing" loading="lazy">
-      <h3>Referral Marketing</h3>
-      <p>Build strong professional referral networks for consistent growth.</p>
-    </a>
-    <a href="solutions/paid-ads.html" class="solution-card">
-      <img src="images/paid-ads.jpg" alt="Paid Ads" loading="lazy">
-      <h3>Paid Ads</h3>
-      <p>Run targeted campaigns on Google and Facebook to attract new clients.</p>
-    </a>
-    <a href="solutions/reputation-reviews.html" class="solution-card">
-      <img src="images/reputation-reviews.jpg" alt="Reputation & Reviews" loading="lazy">
-      <h3>Reputation & Reviews</h3>
-      <p>Manage your online reviews to build trust and credibility.</p>
-    </a>
+  <div class="container">
+    <h2>Our Solutions</h2>
+    <div class="solutions-grid">
+      <a href="/solutions/website-design.html" class="solution-card">
+        <img src="/images/website-design.jpg" alt="Website Design">
+        <h3>Website Design</h3>
+        <p>Custom websites that convert visitors into clients.</p>
+      </a>
+      <a href="/solutions/local-seo.html" class="solution-card">
+        <img src="/images/local-seo.jpg" alt="Local SEO">
+        <h3>Local SEO</h3>
+        <p>Get found by families searching for home care services near you.</p>
+      </a>
+      <a href="/solutions/paid-ads.html" class="solution-card">
+        <img src="/images/paid-ads.jpg" alt="Paid Ads">
+        <h3>Paid Ads</h3>
+        <p>Targeted advertising campaigns to drive immediate inquiries.</p>
+      </a>
+      <a href="/solutions/referral-marketing.html" class="solution-card">
+        <img src="/images/referral-marketing.jpg" alt="Referral Marketing">
+        <h3>Referral Marketing</h3>
+        <p>Build strong professional referral networks to grow your client base.</p>
+      </a>
+      <a href="/solutions/reputation-reviews.html" class="solution-card">
+        <img src="/images/reputation-reviews.jpg" alt="Reputation & Reviews">
+        <h3>Reputation & Reviews</h3>
+        <p>Improve your agency’s online reputation to attract more clients.</p>
+      </a>
+    </div>
   </div>
 </section>
 
+<!-- CTA -->
 <section class="cta">
   <div class="container">
     <h2>Ready to grow your home care agency?</h2>
@@ -76,17 +84,9 @@
   </div>
 </section>
 
-
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-</script>
+<footer>
+  <p>&copy; 2025 Archangel Home Care Marketing. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
