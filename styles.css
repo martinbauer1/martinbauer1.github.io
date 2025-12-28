@@ -49,11 +49,11 @@ section {
 }
 
 .nav-inner {
+  display: flex;
+  justify-content: space-between; /* logo left, nav right */
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .logo a {
@@ -63,9 +63,9 @@ section {
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 2rem;
+  list-style: none;
   align-items: center;
 }
 
