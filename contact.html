@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | Archangel Home Care Marketing</title>
-<meta name="description" content="Contact Archangel Home Care Marketing to schedule a free strategy call for your home care agency.">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Archangel Home Care Marketing</title>
+  <meta name="description" content="Contact Archangel Home Care Marketing to schedule a free strategy call or inquire about our marketing solutions for home care agencies.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="navbar">
-  <div class="logo">Archangel Home Care Marketing</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-      <a href="solutions.html">Solutions</a>
-      <ul class="dropdown-content">
-        <li><a href="solutions/website-design.html">Website Design</a></li>
-        <li><a href="solutions/local-seo.html">Local SEO</a></li>
-        <li><a href="solutions/paid-ads.html">Paid Ads</a></li>
-        <li><a href="solutions/referral-marketing.html">Referral Marketing</a></li>
-        <li><a href="solutions/reputation-reviews.html">Reputation & Reviews</a></li>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo"><a href="index.html">Archangel Home Care Marketing</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="solutions.html">Solutions</a>
+          <ul class="dropdown-menu">
+            <li><a href="solutions/website-design.html">Website Design</a></li>
+            <li><a href="solutions/local-seo.html">Local SEO</a></li>
+            <li><a href="solutions/paid-ads.html">Paid Ads</a></li>
+            <li><a href="solutions/referral-marketing.html">Referral Marketing</a></li>
+            <li><a href="solutions/reputation-management.html">Reputation & Reviews</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
       </ul>
-    </li>
-    <li><a href="contact.html" class="active">Contact Us</a></li>
-  </ul>
-</nav>
+    </div>
+  </nav>
 
-<section class="contact-section container">
-  <div class="contact-info">
-    <h2>Schedule a Free Strategy Call</h2>
-    <ul>
-      <li>Connect 1:1 with a home care marketing expert</li>
-      <li>Explore proven marketing strategies to grow your agency</li>
-      <li>Get expert insights on referrals, ads, SEO, and reputation</li>
-      <li>Phone: 248-330-2772</li>
-      <li>Address: 334 1st Street Northville, MI 48167</li>
-    </ul>
-  </div>
+  <!-- CONTACT SECTION -->
+  <section class="contact-two-column">
+    <div class="container">
+      <div class="contact-left">
+        <h2>Schedule a Free Strategy Call</h2>
+        <ul>
+          <li>Connect 1:1 with an expert</li>
+          <li>Explore proven marketing strategies</li>
+          <li>Get actionable insights to grow your agency</li>
+        </ul>
+      </div>
+      <div class="contact-right">
+        <h2>Tell Us About Your Business</h2>
+        <form class="contact-form">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
 
-  <div class="contact-form">
-    <h2>Tell Us About Your Business</h2>
-    <form action="#" method="post">
-      <label for="fullname">Full Name</label>
-      <input type="text" id="fullname" name="fullname" required>
+          <label for="company-name">Company Name</label>
+          <input type="text" id="company-name" name="company-name" required>
 
-      <label for="company">Company Name</label>
-      <input type="text" id="company" name="company" required>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" value="248-330-2772" required>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required>
+          <label for="website">Website URL</label>
+          <input type="url" id="website" name="website">
 
-      <label for="website">Website URL</label>
-      <input type="url" id="website" name="website">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
+          <label for="business-type">Type of Business</label>
+          <select id="business-type" name="business-type" required>
+            <option value="">Select type</option>
+            <option value="private-duty">Private Duty Home Care</option>
+            <option value="skilled-nursing">Skilled Nursing / Hospice</option>
+            <option value="adult-day-care">Adult Day Care</option>
+          </select>
 
-      <label for="business-type">Type of Business</label>
-      <select id="business-type" name="business-type" required>
-        <option value="">Select Type</option>
-        <option value="home-care">Home Care</option>
-        <option value="hospice">Hospice</option>
-        <option value="nursing">Nursing</option>
-      </select>
+          <label for="monthly-budget">Monthly Revenue</label>
+          <select id="monthly-budget" name="monthly-budget" required>
+            <option value="">Select range</option>
+            <option value="0-5k">$0–$5k</option>
+            <option value="5k-10k">$5k–$10k</option>
+            <option value="10k-25k">$10k–$25k</option>
+            <option value="25k+">$25k+</option>
+          </select>
 
-      <label for="budget">Monthly Budget</label>
-      <select id="budget" name="budget" required>
-        <option value="">Select Budget</option>
-        <option value="0-1000">$0 - $1,000</option>
-        <option value="1000-2500">$1,000 - $2,500</option>
-        <option value="2500-5000">$2,500 - $5,000</option>
-        <option value="5000+">$5,000+</option>
-      </select>
+          <button type="submit" class="btn primary">Get Started</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-      <button type="submit">Get Started</button>
-    </form>
-  </div>
-</section>
+  <footer>
+    <p>&copy; 2025 Archangel Home Care Marketing. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
