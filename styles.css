@@ -144,19 +144,31 @@ section {
   font-weight: 600;
   border-radius: 6px;
   transition: all 0.25s ease;
+  text-align: center;
 }
 
+/* Unified Primary CTA */
 .btn.primary {
   background-color: #f2c94c;
   color: #003b73;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn.primary:hover {
   background-color: #e6b93d;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
 }
 
 /* ==============================
-   SOLUTIONS GRID (FIXED)
+   SOLUTIONS GRID
 ============================== */
 .solutions-overview h2 {
   text-align: center;
@@ -239,12 +251,14 @@ section {
 }
 
 /* ==============================
-   CTA SECTION
+   CTA SECTIONS
 ============================== */
 .cta {
   background-color: #003b73;
   color: #fff;
   text-align: center;
+  padding: 6rem 2rem;
+  border-radius: 12px;
 }
 
 .cta h2 {
@@ -306,6 +320,7 @@ section {
 .contact-form button {
   margin-top: 1.8rem;
   width: 100%;
+  font-size: 1.1rem;
 }
 
 /* ==============================
@@ -337,5 +352,10 @@ footer {
 
   .contact-two-column {
     gap: 3rem;
+  }
+
+  .btn.primary {
+    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
   }
 }
