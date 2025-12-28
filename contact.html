@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Archangel Home Care Marketing</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Archangel Home Care Marketing</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav class="navbar">
-  <div class="logo"><a href="index.html#hero">Archangel Home Care Marketing</a></div>
-  <ul class="nav-links">
-    <li><a href="index.html#hero">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-      <a href="solutions.html">Solutions ▾</a>
-      <ul class="dropdown-menu">
-        <li><a href="solutions/website-design.html">Website Design</a></li>
-        <li><a href="solutions/local-seo.html">Local SEO</a></li>
-        <li><a href="solutions/referral-marketing.html">Referral Marketing</a></li>
-        <li><a href="solutions/paid-ads.html">Paid Ads</a></li>
-        <li><a href="solutions/reputation-reviews.html">Reputation & Reviews</a></li>
-      </ul>
-    </li>
-    <li><a href="contact.html" class="active">Contact Us</a></li>
-  </ul>
+  <div class="nav-inner">
+    <div class="logo">
+      <a href="/index.html">Archangel Home Care Marketing</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li class="dropdown">
+        <a href="/solutions.html">Solutions</a>
+        <ul class="dropdown-menu">
+          <li><a href="/solutions/website-design.html">Website Design</a></li>
+          <li><a href="/solutions/local-seo.html">Local SEO</a></li>
+          <li><a href="/solutions/paid-ads.html">Paid Ads</a></li>
+          <li><a href="/solutions/referral-marketing.html">Referral Marketing</a></li>
+          <li><a href="/solutions/reputation-reviews.html">Reputation & Reviews</a></li>
+        </ul>
+      </li>
+      <li><a href="/contact.html" class="active">Contact Us</a></li>
+    </ul>
+  </div>
 </nav>
 
-<section class="strategy-call">
-  <h2>Schedule a Free Strategy Call</h2>
-  <ul>
-    <li><i class="fa fa-check"></i> Connect 1:1 with an expert</li>
-    <li><i class="fa fa-check"></i> Explore proven marketing strategies</li>
-    <li><i class="fa fa-check"></i> Get expert insights for growth</li>
-  </ul>
-</section>
+<section class="contact-two-column">
+  <div class="container">
+    <div class="contact-left">
+      <h2>Schedule a free strategy call</h2>
+      <ul>
+        <li>Connect 1:1 with a marketing expert</li>
+        <li>Explore proven marketing strategies</li>
+        <li>Get insights to grow your agency</li>
+      </ul>
+    </div>
+    <div class="contact-right">
+      <h2>Tell us about your business</h2>
+      <form class="contact-form">
+        <label>Full Name</label>
+        <input type="text" name="full-name" required>
 
-<section class="contact-two-column" id="contact-form">
-  <div class="contact-left">
-    <h2>Tell Us About Your Business</h2>
-    <p>Fill out the form and we'll craft a plan tailored to your agency.</p>
-  </div>
-  <div class="contact-right">
-    <form class="contact-form">
-      <label for="fullname">Full Name</label>
-      <input type="text" id="fullname" name="fullname" required>
+        <label>Company Name</label>
+        <input type="text" name="company-name" required>
 
-      <label for="company">Company Name</label>
-      <input type="text" id="company" name="company" required>
+        <label>Phone Number</label>
+        <input type="tel" name="phone">
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required>
+        <label>Website URL</label>
+        <input type="url" name="website">
 
-      <label for="website">Website URL</label>
-      <input type="url" id="website" name="website">
+        <label>Email Address</label>
+        <input type="email" name="email" required>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
+        <label>Type of Business</label>
+        <select name="business-type">
+          <option value="non-medical">Non-Medical Home Care</option>
+          <option value="skilled-nursing">Skilled Nursing</option>
+          <option value="hospice">Hospice</option>
+        </select>
 
-      <label for="business-type">Type of Business</label>
-      <select id="business-type" name="business-type">
-        <option value="">Select...</option>
-        <option value="home-care">Home Care</option>
-        <option value="hospice">Hospice</option>
-        <option value="nursing">Nursing</option>
-      </select>
- 
-      <label for="budget">Monthly Budget</label>
-      <select id="budget" name="budget">
-        <option value="">Select...</option>
-        <option value="under-2k">&lt; $2k</option>
-        <option value="2k-5k">$2k–$5k</option>
-        <option value="5k-10k">$5k–$10k</option>
-        <option value="over-10k">&gt; $10k</option>
-      </select>
+        <label>Monthly Budget</label>
+        <select name="monthly-budget">
+          <option value="0-2k">$0–$2k</option>
+          <option value="2k-5k">$2k–$5k</option>
+          <option value="5k-10k">$5k–$10k</option>
+          <option value="10k+">$10k+</option>
+        </select>
 
-      <button type="submit" class="cta-button">Get Started</button>
-    </form>
+        <button type="submit" class="btn primary">Get Started</button>
+      </form>
+    </div>
   </div>
 </section>
+
+<footer>
+  <p>&copy; 2025 Archangel Home Care Marketing. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
